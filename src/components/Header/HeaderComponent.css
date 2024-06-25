@@ -17,11 +17,10 @@ header {
     padding-right: 1.5rem;
     padding-bottom: 1.5rem;
     padding-top: 1.5rem;
-    
 }
 
 .first-link {
-    margin-left:  2.4%;
+    margin-left: 2.4%;
     padding-left: 1.5rem;
 }
 /* responsive, form small screens, use 13px font size */
