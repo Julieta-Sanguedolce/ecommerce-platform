@@ -48,6 +48,12 @@ If you've run a local build, you can start a local server to host those files, u
 yarn preview
 ```
 
+To run the prettier from the command line
+
+```
+yarn prettier --write .
+```
+
 ## Automatic Deployment with Netlify
 
 See [Netlify with Git](https://vitejs.dev/guide/static-deploy.html#building-the-app)
