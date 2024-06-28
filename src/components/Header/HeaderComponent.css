@@ -1,0 +1,31 @@
+header {
+    height: 14vh;
+}
+
+.container {
+    max-width: 100%;
+}
+
+.nav-link-text {
+    font-family: "Kumbh Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    color: hsl(219, 9%, 45%);
+    font-style: normal;
+    font-variation-settings: "YOPQ" 300;
+    padding-left: 0.7rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+.first-link {
+    margin-left: 2.4%;
+    padding-left: 1.5rem;
+}
+/* responsive, form small screens, use 13px font size */
+/* @media (max-width: 375px) {
+    header {
+        height: 13vh;    
+    }
+} */
