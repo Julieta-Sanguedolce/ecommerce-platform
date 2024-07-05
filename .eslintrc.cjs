@@ -79,4 +79,4 @@ module.exports = {
         "no-debugger": "off",
         // "no-console": ["error", { allow: ["warn", "error"] }]
     },
-};
+}

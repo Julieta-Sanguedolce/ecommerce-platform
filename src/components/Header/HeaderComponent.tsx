@@ -1,20 +1,20 @@
-import "./HeaderComponent.css";
-import Logo from "../../assets/logo.svg";
-import IconCart from "../../assets/icon-cart.svg";
-import IconUser from "../../assets/icon-user.svg";
-import IconMenu from "../../assets/icon-menu.svg";
-import { useTheme } from "@mui/material/styles";
-import useMediaQuery from "@mui/material/useMediaQuery";
+import "./HeaderComponent.css"
+import Logo from "../../assets/logo.svg"
+import IconCart from "../../assets/icon-cart.svg"
+import IconUser from "../../assets/icon-user.svg"
+import IconMenu from "../../assets/icon-menu.svg"
+import { useTheme } from "@mui/material/styles"
+import useMediaQuery from "@mui/material/useMediaQuery"
 
 export function HeaderComponent(): JSX.Element {
-    const theme = useTheme();
-    const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+    const theme = useTheme()
+    const isMobile = useMediaQuery(theme.breakpoints.down("sm"))
 
     return (
         <div className="container header">
             {isMobile ? mobileHeader : header}
         </div>
-    );
+    )
 }
 
 const header = (
@@ -46,7 +46,7 @@ const header = (
             </div>
         </div>
     </div>
-);
+)
 
 const mobileHeader = (
     <div className="row" style={{ paddingTop: "9%", paddingLeft: "2%" }}>
@@ -72,4 +72,4 @@ const mobileHeader = (
             </div>
         </div>
     </div>
-);
+)
