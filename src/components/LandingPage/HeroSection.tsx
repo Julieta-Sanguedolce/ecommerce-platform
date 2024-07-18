@@ -3,8 +3,8 @@ import heroImage from "../../data/main.png"
 
 export const HeroSection = () => {
     const [imageStyle, setImageStyle] = useState({
-        width: "1400px",
-        height: "auto",
+        width: "1980px",
+        height: "1080px",
     })
 
     useEffect(() => {
