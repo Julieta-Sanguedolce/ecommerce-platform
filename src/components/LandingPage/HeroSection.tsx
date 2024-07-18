@@ -1,22 +1,25 @@
-import { useState, useEffect } from 'react'
-import heroImage from '../../data/main.png'
+import { useState, useEffect } from "react"
+import heroImage from "../../data/main.png"
 
 export const HeroSection = () => {
-    const [imageStyle, setImageStyle] = useState({ width: '1400px', height: 'auto' })
+    const [imageStyle, setImageStyle] = useState({
+        width: "1400px",
+        height: "auto",
+    })
 
     useEffect(() => {
         const handleResize = () => {
             const windowWidth = window.innerWidth
-            const newWidth = windowWidth > 1980 ? 'auto' : '100%'
-            const newHeight = windowWidth > 1080 ? 'auto' : '100%'
+            const newWidth = windowWidth > 1980 ? "auto" : "100%"
+            const newHeight = windowWidth > 1080 ? "auto" : "100%"
             setImageStyle({ width: newWidth, height: newHeight })
         }
 
-        window.addEventListener('resize', handleResize)
+        window.addEventListener("resize", handleResize)
         handleResize()
 
         return () => {
-            window.removeEventListener('resize', handleResize)
+            window.removeEventListener("resize", handleResize)
         }
     }, [])
 
@@ -32,7 +35,13 @@ export const HeroSection = () => {
                     <img
                         src={heroImage}
                         alt="hero"
-                        style={{ ...imageStyle, maxHeight: '700px', objectFit: 'cover', borderRadius: '0.5rem', boxShadow: '0 10px 15px rgba(0, 0, 0, 0.1)' }}
+                        style={{
+                            ...imageStyle,
+                            maxHeight: "700px",
+                            objectFit: "cover",
+                            borderRadius: "0.5rem",
+                            boxShadow: "0 10px 15px rgba(0, 0, 0, 0.1)",
+                        }}
                     />
                 </div>
             </div>
